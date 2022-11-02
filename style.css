@@ -1,0 +1,179 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.btn-small {
+  width: 10rem;
+  height: 2.5rem;
+  border: none;
+  background: #fff;
+  border-radius: 9rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(21, 20, 20, 0.347);
+}
+.btn-big {
+  width: 16rem;
+  height: 4rem;
+  border: none;
+  background: var(--Pink);
+  border-radius: 9rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(21, 20, 20, 0.347);
+}
+.container {
+  padding: 1.5rem;
+  height: 100vh;
+  background: url(/images/bg-hero-mobile.svg) no-repeat center center/cover;
+}
+.container header nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+#logo img {
+  width: 10rem;
+  margin-top: 0.5rem;
+}
+
+.container .hero-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .hero-section .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .hero-section .hero-text h2 {
+  font-size: 2.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.container .hero-section .hero-text p {
+  font-size: 1.6rem;
+}
+.container .hero-section .hero-text h2,
+.container .hero-section .hero-text p {
+  color: var(--Very-Dark-Cyan);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero-section .hero-text .btn-big {
+  margin-top: 3rem;
+}
+
+.container .hero-section .hero-img img {
+  width: 25rem;
+  margin-top: 4rem;
+}
+
+/* content */
+.des-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.des-content .content {
+  width: 90%;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(21, 20, 20, 0.347);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+}
+.des-content .content .img {
+  width: 18rem;
+}
+.des-content .content .img img {
+  width: 100%;
+}
+.des-content .content .img,
+.des-content .content .text {
+  margin-top: 2rem;
+}
+.des-content .content .text h3 {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.des-content .content .text p {
+  font-size: 1.5rem;
+}
+.des-content .content .text h3,
+.des-content .content .text p {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 4rem;
+  }
+  header nav .btn .btn-small {
+    width: 15rem;
+    height: 3rem;
+  }
+  #logo img {
+    width: 15rem;
+  }
+  .container .hero-section {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container .hero-section .hero-text {
+    padding: 1rem;
+  }
+  .container .hero-section .hero-text h2 {
+    font-size: 2.6rem;
+  }
+
+  .container .hero-section .hero-text p {
+    font-size: 2rem;
+  }
+  .container .hero-section .hero-img {
+    padding: 1rem;
+  }
+
+  .container .hero-section .hero-img img {
+    width: 40rem;
+  }
+}
