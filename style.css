@@ -199,6 +199,7 @@ body {
 .footer {
   padding: 2rem;
   background-color: var(--Very-Dark-Cyan);
+  color: #fff;
 }
 .footer .des-footer .logo img {
   margin-top: 12rem;
@@ -210,10 +211,63 @@ body {
 }
 .footer .footer-location img {
   width: 9rem;
+  height: 4rem;
   margin-right: 1rem;
 }
 .footer .footer-location p {
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+.footer .footer-connect .phone {
+  display: flex;
+  margin: 3rem 0rem;
+}
+.footer-connect .phone img,
+.footer-connect .email img {
+  margin-right: 2rem;
+}
+.footer-connect .phone p,
+.footer-connect .email p {
+  font-size: 1.5rem;
+}
+.footer .footer-connect .email {
+  display: flex;
+}
+.footer .footer-links {
+  margin-top: 2.5rem;
+}
+.footer .footer-links li {
+  margin: 1rem 0rem;
+  font-size: 1.3rem;
+  list-style: none;
+}
+.footer .footer-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footer-copy {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-copy .icons .circle {
+  padding: 0.9rem;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.footer-copy .icons i {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.footer .footer-copy p {
+  font-size: 1.5rem;
+  margin: 2rem 0rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -281,5 +335,37 @@ body {
   .des-content .user .text {
     font-size: 1.8rem;
     text-align: left;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footer-location img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .footer .footer-location p {
+    width: 30rem;
+  }
+  .footer .footer-links {
+    margin: 12rem 0rem 0rem 0rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footer-links div {
+    width: 9rem;
+    margin: 0rem 3rem;
+  }
+  .footer-copy .icons .circle {
+    padding: 0.34rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer-copy .icons i {
+    font-size: 2rem;
+  }
+  .footer .footer-copy p {
+    width: 30rem;
   }
 }
